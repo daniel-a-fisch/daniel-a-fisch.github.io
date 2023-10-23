@@ -9,42 +9,40 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+### Education
 ======
-* MSc in Economics, Barcelona School of Economics, 2024 (expected)
-* MASt in Applied Mathematics, University of Cambridge, 2023
-* BSc in Physics, University of Goettingen, 2022
+* MSc in Economics, **Barcelona School of Economics**, 2024 (expected)
+* MASt in Applied Mathematics, **University of Cambridge**, 2023
+* BSc in Physics, **University of Goettingen**, 2022
 
-Work experience
+### Work experience
 ======
 * Spring 2022: Research Assistant
-  * Max Planck Institute for Dynamics and Self-Organization
+  * **Max Planck Institute for Dynamics and Self-Organization**
   * Duties included: Working in the group on physics of social systems on my Bachelor’s thesis about ride pooling dynamics
   * Department of Dynamics of Complex Fluids of Prof. Stephan Herminghaus, supervised by Dr. Steffen Mühle
 
 * Spring 2022: Visiting Associate
-  * Boston Consulting Group
+  * **Boston Consulting Group**
   * Duties included:
     * Working on a large-scale corporate reorganization of a triple-A client (DAX40) in the energy equipment sector
     * Analyzing organizational KPIs, independently carrying out client meetings, specifying design of the operating model
   * Received offer to return full-time
 
-  
-  
-Talks
+### Talks
 ======
-* Spring 2023: Part III Semniar Series (Mathematical Modeling of Opinion Dynamics)
+* Spring 2023: Part III Seminar Series of the **University of Cambridge** (Mathematical Modeling of Opinion Dynamics)
   
-Teaching
+### Teaching
 ======
 * Spring 2022: Teaching Assistant
-  * University of Goettingen
+  * **University of Goettingen**
   * Duties included:
     * Working with students to help them understand key concepts of mandatory Quantum Mechanics course
     * Preparing and teaching classes in groups of 20 students, marking assignments and the final exam
   * Supervisor: Professor Matthias Krüger
  
 * Spring 2019: Teaching Assistant
-  * Zeppelin University
+  * **Zeppelin University**
   * Duties included: Teaching a brush-up course and workshop in mathematics
   * Supervisor: Dr. Kilian Seng
