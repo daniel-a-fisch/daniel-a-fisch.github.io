@@ -11,49 +11,40 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* MSc in Economics, Barcelona School of Economics, 2024 (expected)
+* MASt in Applied Mathematics, University of Cambridge, 2023
+* BSc in Physics, University of Goettingen, 2022
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Spring 2022: Research Assistant
+  * Max Planck Institute for Dynamics and Self-Organization
+  * Duties included: Working in the group on physics of social systems on my Bachelor’s thesis about ride pooling dynamics
+  * Department of Dynamics of Complex Fluids of Prof. Stephan Herminghaus, supervised by Dr. Steffen Mühle
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Spring 2022: Visiting Associate
+  * Boston Consulting Group
+  * Duties included:
+    * Working on a large-scale corporate reorganization of a triple-A client (DAX40) in the energy equipment sector
+    * Analyzing organizational KPIs, independently carrying out client meetings, specifying design of the operating model
+  * Received offer to return full-time
+
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 Talks
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+* Spring 2023: Part III Semniar Series (Mathematical Modeling of Opinion Dynamics)
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Spring 2022: Teaching Assistant
+  * University of Goettingen
+  * Duties included:
+    * Working with students to help them understand key concepts of mandatory Quantum Mechanics course
+    * Preparing and teaching classes in groups of 20 students, marking assignments and the final exam
+  * Supervisor: Professor Matthias Krüger
+ 
+* Spring 2019: Teaching Assistant
+  * Zeppelin University
+  * Duties included: Teaching a brush-up course and workshop in mathematics
+  * Supervisor: Dr. Kilian Seng
