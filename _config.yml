@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Daniel Fisch"
   avatar           : "Daniel-Fisch.jpg"
-  bio              : "I am a student in Theoretical Physics and Economics at [BSE](https://bse.eu/). I graduated from the University of Cambridge with a MASt in Applied Mathematics in 2023."
+  bio              : "I am a student in Theoretical Physics and Economics at BSE. I graduated from the University of Cambridge with a MASt in Applied Mathematics in 2023."
   location         : "Barcelona, Spain"
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    :  # "http://yourfullgooglescholarurl.com"
-  email            :
+  email            :  
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
