@@ -9,14 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-### Education
-======
+## Education
+
 * MSc in Economics, **Barcelona School of Economics**, 2024 (expected)
 * MASt in Applied Mathematics, **University of Cambridge**, 2023
 * BSc in Physics, **University of Goettingen**, 2022
 
-### Work experience
-======
+## Work experience
+
 * Spring 2022: Research Assistant
   * **Max Planck Institute for Dynamics and Self-Organization**
   * Duties included: Working in the group on physics of social systems on my Bachelor’s thesis about ride pooling dynamics
@@ -29,12 +29,12 @@ redirect_from:
     * Analyzing organizational KPIs, independently carrying out client meetings, specifying design of the operating model
   * Received offer to return full-time
 
-### Talks
-======
+## Talks
+
 * Spring 2023: Part III Seminar Series of the **University of Cambridge** (Mathematical Modeling of Opinion Dynamics)
   
-### Teaching
-======
+## Teaching
+
 * Spring 2022: Teaching Assistant
   * **University of Goettingen**
   * Duties included:
