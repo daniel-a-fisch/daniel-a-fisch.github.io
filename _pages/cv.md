@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+A more detailed CV is available [here](https://daniel-a-fisch.github.io/files/CV_Daniel-Fisch.pdf).
+
 ## Education
 
 * MSc in Economics, **Barcelona School of Economics**, 2024 (expected)
