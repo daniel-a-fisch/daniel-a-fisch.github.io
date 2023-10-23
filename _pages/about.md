@@ -13,4 +13,4 @@ If you are interested in what I am doing or want to discuss anything, please fee
 
 Bio
 ======
-I am a current MSc student in Economics at [BSE](bse.eu). Previously, I graduated from the [University of Cambridge](http://www.damtp.cam.ac.uk/) with a MASt in Applied Mathematics in 2023 and from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html) with a BSc in Physics.
+I am a current MSc student in Economics at [BSE](bse.eu). Previously, I graduated from the [University of Cambridge](http://www.damtp.cam.ac.uk/) with a MASt in Applied Mathematics in 2023 and from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html/) with a BSc in Physics.
