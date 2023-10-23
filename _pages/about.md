@@ -12,9 +12,9 @@ redirect_from:
 If you are interested in what I am doing or want to discuss anything, please feel free to contact me: daf53 [at] cantab.ac.uk
 
 <p float="left">
-  <img src="files/ride-pooling_model.svg" width=0.3\textwidth />
-  <img src="files/ride-pooling_simulation.gif" width=0.3\textwidth /> 
-  <img src="files/opinion-dynamics_HK.png" width=0.3\textwidth />
+  <img align="top" src="files/ride-pooling_model.svg" width="32%" />
+  <img align="top" src="files/ride-pooling_simulation.gif" width="32%" /> 
+  <img align="top" src="files/opinion-dynamics_HK.png" width="32%" />
 </p>
 
 ![Ride pooling simulation](files/ride-pooling_simulation.gif)
