@@ -18,17 +18,15 @@ A more detailed CV is available [here](https://daniel-a-fisch.github.io/files/CV
 * BSc in Physics, **University of Goettingen**, 2022
 * Erasmus year in Theoretical Physics, **University of Edinburgh**, 2021
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've studied so far.</a></p>
-
 ## Work experience
 
 * Spring 2022: Research Assistant
-  * **Max Planck Institute for Dynamics and Self-Organization**
+  * **Max Planck Institute for Dynamics and Self-Organization**, Goettingen
   * Duties included: Working in the group on physics of social systems on my Bachelor’s thesis about ride pooling dynamics
   * Department of Dynamics of Complex Fluids of Prof. Stephan Herminghaus, supervised by Dr. Steffen Mühle
 
 * Spring 2022: Visiting Associate
-  * **Boston Consulting Group**
+  * **Boston Consulting Group**, Vienna
   * Duties included:
     * Working on a large-scale corporate reorganization of a triple-A client (DAX40) in the energy equipment sector
     * Analyzing organizational KPIs, independently carrying out client meetings, specifying design of the operating model
