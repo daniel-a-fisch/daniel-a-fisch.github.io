@@ -16,6 +16,9 @@ A more detailed CV is available [here](https://daniel-a-fisch.github.io/files/CV
 * MSc in Economics, **Barcelona School of Economics**, 2024 (expected)
 * MASt in Applied Mathematics, **University of Cambridge**, 2023
 * BSc in Physics, **University of Goettingen**, 2022
+* Erasmus year in Theoretical Physics, **University of Edinburgh**, 2021
+
+<iframe src="/talkmap/map.html" height="700" width="850" style="border:none;"></iframe>
 
 ## Work experience
 
