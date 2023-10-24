@@ -6,7 +6,7 @@
 
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.css" />
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.2/leaflet.js"></script>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="viewport" content="width=device-width, initial-scale=3.0">
     	<link rel="stylesheet" href="leaflet_dist/screen.css" />
 
     	<link rel="stylesheet" href="leaflet_dist/MarkerCluster.css" />
@@ -24,7 +24,7 @@
               attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
                     }),
     			latlng = L.latLng(30, 10);
-    		var map = L.map('map', {center: [49.311814, 8.424568], zoom: 4, layers: [tiles]});
+    		var map = L.map('map', {center: [49.311814, 8.424568], zoom: 3, layers: [tiles]});
     		var markers = L.markerClusterGroup({
     			showCoverageOnHover: false,
     			maxClusterRadius: 80
