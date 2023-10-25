@@ -15,13 +15,13 @@ If you are interested in what I am doing or want to discuss anything, please fee
 <p float="left">
   <img align="top" src="files/ride-pooling_model.svg" width="58%" />
   <img align="top" src="files/ride-pooling_simulation.gif" width="38%" />
-  <em>Ride pooling model and simulation.</em>
+  <em>[Ride pooling](portfolio/ride-pooling/) model and simulation.</em>
 </p>
 
 <p float="left">
   <img align="top" src="files/opinion-dynamics_HK.png" width="47%" />
   <img align="top" src="files/opinion-dynamics_phase-diag.png" width="45%" />
-  <em>Opinion dynamics of the Hegselmann-Krause model.</em>
+  <em>[Opinion dynamics](portfolio/opinion-dynamics-HK/) of the Hegselmann-Krause model.</em>
 </p>
 
 <p float="left">
@@ -33,4 +33,4 @@ If you are interested in what I am doing or want to discuss anything, please fee
 ## Bio
 
 I am a current MSc student in Economics at [BSE](https://www.bse.eu). Previously, I graduated from the [University of Cambridge](https://www.damtp.cam.ac.uk/) with a MASt in Applied Mathematics in 2023 and from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html/) with a BSc in Physics in 2022.\
-For more details, see my [CV page](https://daniel-a-fisch.github.io/cv).
+For more details, see my [CV page](cv/).
