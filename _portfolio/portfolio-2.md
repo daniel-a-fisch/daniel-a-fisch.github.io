@@ -1,10 +1,10 @@
 ---
 title: "An analytical framework for modeling the bus occupancy dynamics in ride pooling systems"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/files/ride-pooling_simulation.gif'>"
+excerpt: "Short description of my bachelor thesis at the Max Planck Institute for Dynamics and Self-Organization about the dynamics of ride pooling.<br/><img src='/files/ride-pooling_simulation.gif' width="50%">"
 collection: portfolio
 ---
 
-## An analytical framework for modeling the bus occupancy dynamics in ride pooling systems
+
 Individual cars are still a vital part of modern society transportation. Nevertheless, they are also a considerable contributor to air pollution, exploitation of natural resources and traffic congestion.
 The emerging transport mode of ride pooling combines the journeys of multiple users into a single on-demand bus. Thus it could mitigate the negative impact of individual transportation on the environment and the society.\
 Most existing studies on ride pooling simulate it in great details while trying to be as realistic as possible and consequently, the causal relation between model input and output is blurred. 
