@@ -4,8 +4,6 @@ excerpt: "A short description of my Part III essay about opinion dynamics as par
 collection: portfolio
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 In simple terms, the research field of opinion dynamics asks: Given an initial opinion state $x(0)$ and dynamics specified by a set of (general) interaction rules on a network, what can be said about the final behavior of the opinion profile, i.e.\ $\lim\limits_{t \to \infty} x(t)$? In particular, when is \textit{consensus} $c$ reached, i.e.\ $\forall i = 1,\dots,N$: $\lim\limits_{t \to \infty} x_i(t) \equiv c$?\
 
 In order to address the diversity of the research area of opinion dynamics, I gave a general overview of different types of models for the description of opinion dynamics with focus on the voter, DeGroot and Hegselmann-Krause (HK) model. I also reviewed other models from the literature. 
