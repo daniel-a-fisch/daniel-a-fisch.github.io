@@ -1,6 +1,6 @@
 ---
 title: "Predicting Opinion Phases in the Hegselmann-Krause Model"
-excerpt: "A short description of my Part III essay about opinion dynamics as part of my MASt in Applied Mathematics at the University of Cambridge.<br/><img src='/files/opinion-dynamics_HK.png' width="50%">"
+excerpt: "A short description of my Part III essay about opinion dynamics as part of my MASt in Applied Mathematics at the University of Cambridge.<br/><img src='/files/opinion-dynamics_HK.png' width='50%'>"
 collection: portfolio
 ---
 
