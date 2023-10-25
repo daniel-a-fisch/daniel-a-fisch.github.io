@@ -1,6 +1,6 @@
 ---
 title: "An analytical framework for modeling the bus occupancy dynamics in ride pooling systems"
-excerpt: "A short description of my bachelor thesis at the Max Planck Institute for Dynamics and Self-Organization about the dynamics of ride pooling.<br/><img src='/files/ride-pooling_simulation.gif' width='300'>"
+excerpt: "A short description of my bachelor thesis at the Max Planck Institute for Dynamics and Self-Organization about the dynamics of ride pooling.<br/><img src='/files/ride-pooling_simulation.gif' width='100'>"
 collection: portfolio
 ---
 
