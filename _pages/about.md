@@ -15,13 +15,13 @@ If you are interested in what I am doing or want to discuss anything, please fee
 <p float="left">
   <img align="top" src="files/ride-pooling_model.svg" width="58%" />
   <img align="top" src="files/ride-pooling_simulation.gif" width="38%" />
-  <em>[Ride pooling](https://daniel-a-fisch.github.io/portfolio/ride-pooling/) model and simulation.</em>
+  <em>Ride pooling model and simulation.</em>
 </p>
 
 <p float="left">
   <img align="top" src="files/opinion-dynamics_HK.png" width="47%" />
   <img align="top" src="files/opinion-dynamics_phase-diag.png" width="45%" />
-  <em>[Opinion dynamics](https://daniel-a-fisch.github.io/portfolio/opinion-dynamics-HK/) of the Hegselmann-Krause model.</em>
+  <em>Opinion dynamics of the Hegselmann-Krause model.</em>
 </p>
 
 <p float="left">
@@ -29,6 +29,7 @@ If you are interested in what I am doing or want to discuss anything, please fee
   <img align="top" src="files/L1_unstable.svg" width="46%" />
   <em>Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
 </p>
+See my [Examples page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
 
 ## Bio
 
