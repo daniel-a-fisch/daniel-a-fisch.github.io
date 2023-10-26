@@ -31,8 +31,8 @@ If you are interested in what I am doing or want to discuss anything, please fee
 </p>
 See my [Examples page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
 <p float="left">
-  <img align="top" src="/daniel-a-fisch.github.io/files/private-car.png" width="45%" />
-  <img align="top" src="/daniel-a-fisch.github.io/files/ride-pooling.png" width="45%" />
+  <img align="top" src="./files/private-car.png" width="45%" />
+  <img align="top" src="./files/ride-pooling.png" width="45%" />
   <em>Ride pooling combines multiple journeys into a single on-demand bus.</em>
 </p>
 
