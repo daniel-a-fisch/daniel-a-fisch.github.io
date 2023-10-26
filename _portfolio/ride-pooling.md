@@ -22,6 +22,10 @@ For this purpose, the complex dynamics are projected onto a single variable repr
 the bus occupancy and how it changes over time.
 This reduces the high-dimensional simulation space to a one-dimensional perspective without access to any instantaneous information about the spatial configuration of the system. 
 Accordingly, a generic modeling framework is presented that is kept as simple as possible and which can predict both statistical information and dynamic behavior of the variable bottom-up.
+<p float="left">
+  <img align="top" src="../../files/rp_framework.png" width="75%" /><br/>
+  <em>Structure of suggested framework.</em>
+</p>
 
 Applying the framework to a simple ride pooling system, it provides very accurate results for the bus occupancy statistics and predicts the dynamics reasonably precise, while being modular in design and by this remaining adaptable to many different setups. 
 For instance, the geometry of the map is fed directly into the model and eventually, using the proposed framework, the quality of the map for ride pooling systems could be evaluated without the need of running high-dimensional agent-based simulations on said map.
