@@ -13,28 +13,23 @@ If you are interested in what I am doing or want to discuss anything, please fee
 
 
 <p float="left">
-  <img align="top" src="files/ride-pooling_model.svg" width="58%" />
-  <img align="top" src="files/ride-pooling_simulation.gif" width="38%" />
+  <img align="top" src="files/ride-pooling_model.svg" width="60%" />
+  <img align="top" src="files/ride-pooling_simulation.gif" width="40%" />
   <em>Ride pooling model and simulation.</em>
 </p>
 
 <p float="left">
-  <img align="top" src="files/opinion-dynamics_HK.png" width="47%" />
-  <img align="top" src="files/opinion-dynamics_phase-diag.png" width="45%" />
+  <img align="top" src="files/opinion-dynamics_HK.png" width="51%" />
+  <img align="top" src="files/opinion-dynamics_phase-diag.png" width="49%" />
   <em>Opinion dynamics of the Hegselmann-Krause model.</em>
 </p>
 
 <p float="left">
-  <img align="top" src="files/Arenstorf_own-RK4.svg" width="46%" />
-  <img align="top" src="files/L1_unstable.svg" width="46%" />
+  <img align="top" src="files/Arenstorf_own-RK4.svg" width="50%" />
+  <img align="top" src="files/L1_unstable.svg" width="50%" />
   <em>Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
 </p>
 See my [Examples page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
-<p float="left">
-  <img align="top" src="./files/private-car.png" width="45%" />
-  <img align="top" src="./files/ride-pooling.png" width="45%" />
-  <em>Ride pooling combines multiple journeys into a single on-demand bus.</em>
-</p>
 
 
 ## Bio
