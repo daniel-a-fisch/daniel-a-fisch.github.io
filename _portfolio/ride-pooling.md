@@ -7,11 +7,9 @@ collection: portfolio
 
 Individual cars are still a vital part of modern society transportation. Nevertheless, they are also a considerable contributor to air pollution, exploitation of natural resources and traffic congestion.
 The emerging transport mode of ride pooling combines the journeys of multiple users into a single on-demand bus. Thus it could mitigate the negative impact of individual transportation on the environment and the society.
-<p float="left">
-  <img align="top" src="private-car.png" width="45%" />
-  <img align="top" src="ride-pooling.png" width="45%" />
-  <em>Ride pooling combines multiple journeys into a single on-demand bus.</em>
-</p>
+
+![Alt text](private-car.png) ![Alt text](ride-pooling.png)
+
 
 Most existing studies on ride pooling simulate it in great details while trying to be as realistic as possible and consequently, the causal relation between model input and output is blurred. 
 However, a profound understanding of the system would be indispensable for a successful implementation.
