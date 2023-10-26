@@ -12,7 +12,7 @@ In addition, I use two simple examples to illustrate the extra effort involved i
 <p float="left">
   <img align="top" src="../../files/HK-consensus.png" width="32%" />
   <img align="top" src="../../files/HK-polarization.png" width="32%" />
-  <img align="top" src="../../files/HK-cluster.png" width=32%" /><br/>
+  <img align="top" src="../../files/HK-cluster.png" width="32%" /><br/>
   <em>The different opinion phases of the HK model: consensus, polarization and fragmentation.</em>
 </p>
 I then delve deeper into the non-linear HK bounded confidence model with the three opinion phases: consensus, polarization and fragmentation. We are able to gain some fundamental insights using analytical methods, yet other phenomena are better investigated using computer simulations.
