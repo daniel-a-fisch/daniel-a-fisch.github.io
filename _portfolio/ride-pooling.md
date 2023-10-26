@@ -10,7 +10,7 @@ The emerging transport mode of ride pooling combines the journeys of multiple us
 
 <p float="left">
   <img align="top" src="./private-car.png" width="48%" />
-  <img align="top" src="./ride-pooling.png" width="48%" />
+  <img align="top" src="./ride-pooling.png" width="48%" /><br/>
   <em>Ride pooling combines multiple journeys into a single on-demand bus.</em>
 </p>
 
