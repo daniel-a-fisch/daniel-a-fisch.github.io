@@ -1,13 +1,12 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  name        : "Daniel Fisch"
+  uri         : "https://daniel-a-fisch.github.io/"
+  email       : "daf53@cantab.ac.uk"
+  bio         : "Student in Theoretical Physics and Economics."
+  avatar      : "Daniel-Fisch.jpg"
+  linkedin     : "daniel-fisch"
 
 Name2 Name2:
   name        : "Name2 Name2"
