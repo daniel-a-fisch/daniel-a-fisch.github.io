@@ -29,7 +29,7 @@ If you are interested in what I am doing or want to discuss anything, please fee
   <img align="top" src="files/L1_unstable.svg" width="48%" />
   <em>Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
 </p>
-See my [Examples page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
+See my [Projects page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
 
 
 ## Bio
