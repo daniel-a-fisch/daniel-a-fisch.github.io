@@ -2,5 +2,7 @@
 main:
   - title: "CV"
     url: /cv/
-  - title: "Examples"
+  - title: "Projects"
     url: /portfolio/
+  - title: "Teaching"
+    url: /teaching/
