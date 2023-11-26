@@ -11,7 +11,7 @@ The emerging transport mode of ride pooling combines the journeys of multiple us
 <p float="left">
   <img align="top" src="../../files/private-car.png" width="48%" />
   <img align="top" src="../../files/ride-pooling.png" width="48%" /><br/>
-  <em>Ride pooling combines multiple journeys into a single on-demand bus.</em>
+  <em>Ride pooling combines multiple journeys into a single on-demand bus [figure used with the permission of Steffen Mühle].</em>
 </p>
 
 Most existing studies on ride pooling simulate it in great details while trying to be as realistic as possible and consequently, the causal relation between model input and output is blurred. 
