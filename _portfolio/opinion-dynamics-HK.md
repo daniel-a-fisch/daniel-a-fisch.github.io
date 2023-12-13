@@ -3,6 +3,7 @@ title: "Predicting Opinion Phases in the Hegselmann-Krause Model"
 excerpt: "A short description of my Part III essay about opinion dynamics as part of my MASt in Applied Mathematics at the University of Cambridge.<br/><img src='/files/opinion-dynamics_HK.png' width='40%'>"
 collection: portfolio
 ---
+*The code for this project is available on my [GitHub](https://github.com/daniel-a-fisch/Part-III-essay_opinion-dynamics).*
 
 In simple terms, the research field of opinion dynamics asks: Given an initial opinion state $x(0)$ and dynamics specified by a set of (general) interaction rules on a network, what can be said about the final behavior of the opinion profile, i.e. $\lim\limits_{t \to \infty} x(t)$? In particular, when is *consensus* $c$ reached, i.e. $\forall i = 1,\dots,N$: $\lim\limits_{t \to \infty} x_i(t) \equiv c$?
 
