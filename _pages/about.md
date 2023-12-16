@@ -16,29 +16,26 @@ Currently, I am particularly interested in **understanding how underlying micro-
 If you are interested in what I am doing or want to discuss anything, please feel free to contact me: daf53 [at] cantab.ac.uk
 
 
-<div style="text-align: center;">
-  <p float="left">
-    <img align="top" src="files/ride-pooling_model.svg" width="59%" />
-    <img align="top" src="files/ride-pooling_simulation.gif" width="39%" />
-    <em style="font-size: 80%;">Ride pooling model and simulation.</em>
-  </p>
-</div>
+<p float="left">
+  <img align="top" src="files/ride-pooling_model.svg" width="59%" />
+  <img align="top" src="files/ride-pooling_simulation.gif" width="39%" />
+  <em style="font-size: 80%; display: block; margin: 0 auto;">Ride pooling model and simulation.</em>
+</p>
 
-<div style="text-align: center;">
-  <p float="left">
-    <img align="top" src="files/opinion-dynamics_HK.png" width="50%" />
-    <img align="top" src="files/opinion-dynamics_phase-diag.png" width="47%" />
-    <em style="font-size: 80%;">Opinion dynamics of the Hegselmann-Krause model.</em>
-  </p>
-<\div>
 
-<div style="text-align: center;">
-  <p float="left">
-    <img align="top" src="files/Arenstorf_own-RK4.svg" width="48%" />
-    <img align="top" src="files/L1_unstable.svg" width="48%" />
-    <em style="font-size: 80%;">Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
-  </p>
-<\div>
+<p float="left">
+  <img align="top" src="files/opinion-dynamics_HK.png" width="50%" />
+  <img align="top" src="files/opinion-dynamics_phase-diag.png" width="47%" />
+  <em style="font-size: 80%;">Opinion dynamics of the Hegselmann-Krause model.</em>
+</p>
+
+
+<p float="left">
+  <img align="top" src="files/Arenstorf_own-RK4.svg" width="48%" />
+  <img align="top" src="files/L1_unstable.svg" width="48%" />
+  <em style="font-size: 80%;">Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
+</p>
+
 See my [Projects page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
 
 
