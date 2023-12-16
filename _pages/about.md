@@ -33,7 +33,7 @@ If you are interested in what I am doing or want to discuss anything, please fee
 <p float="left">
   <img align="top" src="files/Arenstorf_own-RK4.svg" width="48%" />
   <img align="top" src="files/L1_unstable.svg" width="48%" />
-  <em style="font-size: 80%;">Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
+  <em>Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
 </p>
 
 See my [Projects page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work.
