@@ -19,14 +19,14 @@ If you are interested in what I am doing or want to discuss anything, please fee
 <p float="left">
   <img align="top" src="files/ride-pooling_model.svg" width="59%" />
   <img align="top" src="files/ride-pooling_simulation.gif" width="39%" />
-  <em style="font-size: 80%; display: block; margin: 0 auto;">Ride pooling model and simulation.</em>
+  <em>Ride pooling model and simulation.</em>
 </p>
 
 
 <p float="left">
   <img align="top" src="files/opinion-dynamics_HK.png" width="50%" />
   <img align="top" src="files/opinion-dynamics_phase-diag.png" width="47%" />
-  <em style="font-size: 80%;">Opinion dynamics of the Hegselmann-Krause model.</em>
+  <em>Opinion dynamics of the Hegselmann-Krause model.</em>
 </p>
 
 
