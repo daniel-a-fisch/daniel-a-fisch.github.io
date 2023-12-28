@@ -14,6 +14,7 @@ A small collection of links to online resources that I find exciting and insight
 ### Blogs
 
 - [Quanta Magazine](https://www.quantamagazine.org/): Great online magazine to follow current research topics in STEM subjects. Requires a little previous subject exposure.
+- [538](https://projects.fivethirtyeight.com/): Interesting American news website with focus on [data](https://data.fivethirtyeight.com/).
 
 ### Videos
 
