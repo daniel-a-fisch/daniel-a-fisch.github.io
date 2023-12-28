@@ -4,3 +4,5 @@ main:
     url: /files/CV_Daniel-Fisch.pdf
   - title: "Projects"
     url: /portfolio/
+  - title: "Reading List"
+    url: /reading-list/
