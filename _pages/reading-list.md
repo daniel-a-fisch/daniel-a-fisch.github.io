@@ -1,5 +1,5 @@
 ---
-permalink: /reading_list/
+permalink: /reading-list/
 title: "Reading List"
 modified: 2023-12-28
 ---
@@ -18,6 +18,6 @@ A small collection of links to online resources that I find exciting and insight
 ### Videos
 
 - [3Blue1Brown](https://www.youtube.com/@3blue1brown): One of the best YouTube channels for learning the intuition behind and appreciating the beauty of mathematics.
-- [Veritasium](https://www.youtube.com/watch?v=mScpHTIi-kM): Popular science channel covering a wide range of topics from the world of science, from maths to physics to game theory.
+- [Veritasium](https://www.youtube.com/@veritasium): Popular science channel covering a wide range of topics from the world of science, from maths to physics to [game theory](https://www.youtube.com/watch?v=mScpHTIi-kM).
 - [Primer](https://www.youtube.com/@PrimerBlobs): Cute animations about popular science topics.
 
