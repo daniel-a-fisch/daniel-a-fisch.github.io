@@ -11,10 +11,11 @@ modified: 2023-12-28
 
 A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list - feel free to send me your recommendations: daf53 [at] cantab.ac.uk.
 
-### Blogs
+### Websites and Blogs
 
 - [Quanta Magazine](https://www.quantamagazine.org/): Great online magazine to follow current research topics in STEM subjects. Requires a little previous subject exposure.
 - [538](https://projects.fivethirtyeight.com/): Interesting American news website with focus on [data](https://data.fivethirtyeight.com/).
+- [Atlas of Cafes](https://cafeatlas.org/): Ariel Rubinstein's Atlas of Cafes where one can think. 
 
 ### Videos
 
