@@ -5,7 +5,7 @@ modified: 2023-12-28
 ---
 
 {% include base_path %}
-{% include toc %}
+<!--- {% include toc %} -->
 
 ## Reading List
 
