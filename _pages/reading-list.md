@@ -9,7 +9,7 @@ modified: 2023-12-28
 
 ## Reading List
 
-A small collection of links to online resources that I find exciting and insightful.
+A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list - feel free to send me your recommendations: daf53 [at] cantab.ac.uk.
 
 ### Blogs
 
@@ -17,7 +17,7 @@ A small collection of links to online resources that I find exciting and insight
 
 ### Videos
 
-- [3Blue1Brown](https://www.youtube.com/@3blue1brown): One of the best YouTube channels for learning the intuition behind and appreciating the beauty of mathematics.
-- [Veritasium](https://www.youtube.com/@veritasium): Popular science channel covering a wide range of topics from the world of science, from maths to physics to [game theory](https://www.youtube.com/watch?v=mScpHTIi-kM).
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown): One of the best YouTube channels for learning the intuition behind and appreciating the beauty of mathematics. The playlists Essence of Calculus and Essence of Linear Algebra supported me well through my first semester maths lectures.
+- [Veritasium](https://www.youtube.com/@veritasium): Popular science channel covering a wide range of topics from the world of science, from [maths](https://www.youtube.com/watch?v=ovJcsL7vyrk) to [physics](https://www.youtube.com/watch?v=fDek6cYijxI) to [game theory](https://www.youtube.com/watch?v=mScpHTIi-kM).
 - [Primer](https://www.youtube.com/@PrimerBlobs): Cute animations about popular science topics.
 
