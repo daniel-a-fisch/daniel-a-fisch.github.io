@@ -1,7 +1,6 @@
 ---
 permalink: /reading-list/
 title: "Reading List"
-modified: 2024-01-02
 ---
 
 {% include base_path %}
