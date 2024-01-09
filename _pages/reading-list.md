@@ -14,6 +14,7 @@ A small collection of links to online resources that I find exciting and insight
 - [538](https://projects.fivethirtyeight.com/): Interesting American news website with focus on [data](https://data.fivethirtyeight.com/).
 - [Atlas of Cafes](https://cafeatlas.org/): Ariel Rubinstein's Atlas of Cafes where one can think.
 - [An Introduction to Measure Theory](https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/): A very good introduction to measure theory by Fields medallist Terence Tao, which I used for self-study. A preliminary version is available online for free.
+- [How to build an economic model in your spare time](https://people.ischool.berkeley.edu/~hal/Papers/how.pdf): Hal Varian's entertaining advice on building economic models.
 
 ### Videos
 
