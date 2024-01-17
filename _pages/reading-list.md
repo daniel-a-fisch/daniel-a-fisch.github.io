@@ -15,6 +15,7 @@ A small collection of links to online resources that I find exciting and insight
 - [Atlas of Cafes](https://cafeatlas.org/): Ariel Rubinstein's Atlas of Cafes where one can think.
 - [An Introduction to Measure Theory](https://terrytao.wordpress.com/books/an-introduction-to-measure-theory/): A very good introduction to measure theory by Fields medallist Terence Tao, which I used for self-study. A preliminary version is available online for free.
 - [How to build an economic model in your spare time](https://people.ischool.berkeley.edu/~hal/Papers/how.pdf): Hal Varian's entertaining advice on building economic models.
+- [QuantEcon](https://quantecon.org/): Helpful website to learn how to code for economic modeling using Python or Julia, including some theoretical background and example code.
 
 ### Videos
 
