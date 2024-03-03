@@ -21,6 +21,7 @@ A small collection of links to online resources that I find exciting and insight
 
 - [Is life really that complex?](https://www.youtube.com/watch?v=LnQYJa9-aR0): If you were wondering what complexity sciences is about, British mathematician Hannah Fry gives in her TED talk an easily accessible explanation of what makes it so exciting.
 - [3Blue1Brown](https://www.youtube.com/@3blue1brown): One of the best YouTube channels for learning the intuition behind and appreciating the beauty of mathematics. The playlists Essence of Calculus and Essence of Linear Algebra supported me well through my first semester's maths lectures.
+- [Social and Economic Networks](https://www.youtube.com/@socialandeconomicnetworks4586/playlists): An interesting online video series about networks and economics by Prof. Matthew Jackson. 
 - [Veritasium](https://www.youtube.com/@veritasium): Popular science channel covering a wide range of topics from the world of science, from [maths](https://www.youtube.com/watch?v=ovJcsL7vyrk) to [physics](https://www.youtube.com/watch?v=fDek6cYijxI) to [game theory](https://www.youtube.com/watch?v=mScpHTIi-kM).
 - [Primer](https://www.youtube.com/@PrimerBlobs): Cute animations about popular science topics.
 
