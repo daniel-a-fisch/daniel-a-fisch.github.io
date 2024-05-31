@@ -3,7 +3,7 @@ title: "Nobody Can (And Wants To) Talk To Everyone: A Networked Bounded Confiden
 excerpt: "A short abstract of Mareike's and my work to generalize two of the most popular opinion dynamics models: the DeGroot and Hegselmann-Krause model. We explore the new phenomenon of opinion crossing to inspire future research.<br/><img src='/files/4-circle_osc_history.png' width='40%'>"
 collection: portfolio
 ---
-*The code for this project is available on my [GitHub](Code_Networked-Bounded-Confidence-Model.ipynb).*
+*The code for this project is available on my [GitHub](https://github.com/daniel-a-fisch/BSE-econ/blob/main/Code_Networked-Bounded-Confidence-Model.ipynb).*
 
 We propose a _networked bounded confidence model_ in which we combine a structural network in the DeGroot sense with bounded confidence dynamics following the Hegselmann-Krause model.
 This aims to provide a more realistic model of opinion dynamics in larger groups where not everyone can talk to everyone but at the same time agents prefer to communicate with others of similar opinion.
