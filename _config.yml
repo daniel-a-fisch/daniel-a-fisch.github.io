@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Daniel A. Fisch"
 title_separator          : "-"
 name                     : &name "Daniel A. Fisch"
-description              : &description "Student in Theoretical Physics (UofCambridge, UofGoettingen) and Economics (BSE)"
+description              : &description "Theoretical Physicist (UofCambridge, UofGoettingen) and Economist (BSE)"
 url                      : https://daniel-a-fisch.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "daniel-a-fisch/daniel-a-fisch.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Daniel A. Fisch"
   avatar           : "Daniel-Fisch.jpg"
-  bio              : "I am a Master's student in Economics and Theoretical Physics, currently at BSE. I graduated from the University of Cambridge with a MASt in Applied Mathematics in 2023."
+  bio              :  "I am an Economist and Theoretical Physicist with a degree in Economics from BSE (2024) and in Applied Mathematics from the University of Cambridge (2023)." #"I am a Master's student in Economics and Theoretical Physics, currently at BSE. I graduated from the University of Cambridge with a MASt in Applied Mathematics in 2023."
   location         : "Barcelona, Spain"
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
