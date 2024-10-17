@@ -41,5 +41,5 @@ See my [Projects page](https://daniel-a-fisch.github.io/portfolio/) for more det
 
 ## Bio
 
-I am a current MSc student in Economics at [BSE](https://www.bse.eu). Previously, I graduated from the [University of Cambridge](https://www.damtp.cam.ac.uk/) with a MASt in Applied Mathematics in 2023 and from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html/) with a BSc in Physics in 2022.\
+I hold a Masters degree in both Economics ([BSE](https://www.bse.eu), 2024) and Applied Mathematics ([University of Cambridge](https://www.damtp.cam.ac.uk/), 2023). Previously, I graduated from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html/) with a BSc in Physics in 2022.\
 For more details, see my [CV](https://daniel-a-fisch.github.io/files/CV_Daniel-Fisch.pdf).
