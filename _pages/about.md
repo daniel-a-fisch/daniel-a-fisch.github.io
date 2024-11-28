@@ -13,7 +13,7 @@ More precisely, I intend to achieve this by combining economic modeling and anal
 
 I am intrigued by emergent phenomena and want to **understand how underlying micro-level interactions lead to macro-dynamics and influence aggregate economic outcomes**. In particular, I am interested in questions about how, in network economics, the mechanisms of individual social interactions determine our aggregate behaviour, how in labour economics, by matching workers and employers, wages and unemployment are shaped, and how heterogeneous agents drive macroeconomics.<br>
 
-See my [Projects page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work or an example [published by UPF](http://hdl.handle.net/10230/68457).\
+See my [Projects page](https://daniel-a-fisch.github.io/portfolio/) for more details on my work or an example project [published by UPF](http://hdl.handle.net/10230/68457).
 
 If you are interested in what I am doing or want to discuss anything, please feel free to contact me: daniel.fisch [at] bse.eu
 
