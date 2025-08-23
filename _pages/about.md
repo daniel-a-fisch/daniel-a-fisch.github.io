@@ -35,11 +35,11 @@ If you are interested in what I am doing or want to discuss anything, please fee
 <p float="left">
   <img align="top" src="files/Arenstorf_own-RK4.svg" width="48%" />
   <img align="top" src="files/L1_unstable.svg" width="48%" />
-  <em>Numerical analysis of the restricted three body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
+  <em>Numerical analysis of the restricted three-body problem (Arenstorf orbit with own RK4 algorithm and unstable Lagrange point L1).</em>
 </p>
 
 
 ## Bio
 
-Currently, I work for [QuantCo](https://www.quantco.com/) as a data scientist. I hold a Masters degree in both Economics ([BSE](https://www.bse.eu), 2024) and Applied Mathematics ([University of Cambridge](https://www.damtp.cam.ac.uk/), 2023). Previously, I graduated from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html/) with a BSc in Physics in 2022.\
+I am a current PhD student in Economics at [MIT](https://economics.mit.edu/people/phd-students/daniel-fisch). Previously, I worked for [QuantCo](https://www.quantco.com/) as a data scientist in London and Munich. I hold a Masters degree in both Economics ([BSE](https://www.bse.eu), 2024) and Applied Mathematics ([University of Cambridge](https://www.damtp.cam.ac.uk/), 2023). I graduated from the [University of Goettingen](https://www.uni-goettingen.de/en/20493.html/) with a BSc in Physics in 2022.\
 For more details, see my [CV](https://daniel-a-fisch.github.io/files/CV_Daniel-Fisch.pdf).
