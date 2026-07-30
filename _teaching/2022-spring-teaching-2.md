@@ -2,7 +2,7 @@
 title: "Quantum Mechanics TA"
 collection: teaching
 type: "Tutorial"
-permalink: /teaching/2022-spring-teaching-1
+permalink: /teaching/2022-spring-teaching-2/
 venue: "University of Goettingen, Physics"
 date: 2022-04-01
 location: "Goettingen, Germany"

@@ -1,8 +1,15 @@
-# main links links
+# Main site navigation.
+#
+# To add a page: create the file in _pages/ with a `permalink:`, then add a
+# title/url pair here. Order in this list is the order in the menu.
 main:
-  - title: "CV"
-    url: /files/CV_Daniel-Fisch.pdf
+  - title: "Research"
+    url: /research/
   - title: "Projects"
-    url: /portfolio/
+    url: /projects/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "CV"
+    url: /cv/
   - title: "Reading List"
     url: /reading-list/

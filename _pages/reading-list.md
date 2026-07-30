@@ -1,12 +1,14 @@
 ---
+layout: archive
 permalink: /reading-list/
 title: "Reading List"
+excerpt: "Online resources on economics, mathematics, and complex systems that I find worth sharing."
+author_profile: true
 ---
 
 {% include base_path %}
-<!--- {% include toc %} -->
 
-A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list - feel free to send me your recommendations: daf53 [at] cantab.ac.uk.
+A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list — feel free to send me your recommendations: {{ site.author.email }}.
 
 ### Websites and Blogs
 

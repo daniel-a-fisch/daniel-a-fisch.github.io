@@ -1,0 +1,641 @@
+/* ==========================================================================
+   CUSTOM SKIN
+   --------------------------------------------------------------------------
+   Overrides on top of the Minimal Mistakes / AcademicPages base. This file is
+   imported last in assets/css/main.scss so it wins without editing any
+   upstream partial — keeping the theme mergeable with its source.
+
+   Everything site-specific belongs here rather than in _variables.scss.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Design tokens
+   -------------------------------------------------------------------------- */
+
+$ink              : #1a1a18;
+$ink-muted        : #55534e;
+$ink-faint        : #8a8781;
+$rule             : #e2ded6;
+$rule-strong      : #c9c4b8;
+$paper            : #fdfdfc;
+$accent           : #15476b;
+$accent-hover     : #0d2f47;
+$accent-wash      : #eef2f6;
+
+$font-serif-text  : "Source Serif 4", Georgia, "Times New Roman", serif;
+$font-sans-text   : "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$measure          : 40em; /* ~68 characters at this size */
+
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+
+html {
+  font-size: 17px;
+
+  @include breakpoint($medium) {
+    font-size: 18px;
+  }
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
+  @include breakpoint($x-large) {
+    font-size: 19px;
+  }
+}
+
+body {
+  background-color: $paper;
+  color: $ink;
+  font-family: $font-sans-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings carry the serif; body copy stays sans. This pairing is the single
+   biggest departure from the stock theme, which sets system sans everywhere. */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.author__name,
+.home__name {
+  font-family: $font-serif-text;
+  color: $ink;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+a {
+  color: $accent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  transition: color 0.12s ease-in-out;
+
+  &:visited { color: $accent; }
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* Prose links are underlined at rest; navigation and list-title links are not
+   (they get their affordance from position and weight instead). */
+.page__content p a,
+.page__content li a,
+.archive__item-excerpt a,
+.home__standfirst a,
+.cv-list a {
+  text-decoration: underline;
+}
+
+strong { font-weight: 600; }
+
+blockquote {
+  border-left: 2px solid $rule-strong;
+  color: $ink-muted;
+  font-style: normal;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $rule;
+}
+
+
+/* --------------------------------------------------------------------------
+   Masthead
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  border-bottom: 1px solid $rule;
+  animation: none; /* the intro fade reads as theme flourish, not craft */
+
+  &__inner-wrap {
+    font-family: $font-sans-text;
+    padding-top: 1.35em;
+    padding-bottom: 1.35em;
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: $ink-muted;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    &:hover { color: $accent; }
+  }
+
+  /* Site name: serif, sentence case, no uppercase treatment. */
+  .masthead__menu-item--lg a {
+    color: $ink;
+    font-family: $font-serif-text;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-transform: none;
+  }
+
+  .visible-links a:before { background: $accent; }
+
+  button { color: $ink; }
+
+  .hidden-links {
+    border: 1px solid $rule;
+    border-radius: 2px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+
+    a { color: $ink-muted; }
+    &:before { border-bottom-color: $rule; }
+    &:after  { border-bottom-color: #fff; }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Page shell and measure
+   -------------------------------------------------------------------------- */
+
+.page {
+  .page__inner-wrap > section.page__content,
+  .page__content {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  /* Cap the measure for readability. Figures and tables opt out below. */
+  .page__content > p,
+  .page__content > ul,
+  .page__content > ol,
+  .page__content > blockquote,
+  .page__content > h2,
+  .page__content > h3,
+  .page__content > h4 {
+    max-width: $measure;
+  }
+}
+
+.page__title {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.page__content {
+  h2 {
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: 1.35rem;
+  }
+
+  h3 {
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+    font-size: 1.15rem;
+  }
+
+  p { margin-bottom: 1.15em; }
+
+  ul, ol { margin-bottom: 1.15em; }
+
+  li { margin-bottom: 0.35em; }
+}
+
+
+/* --------------------------------------------------------------------------
+   Sidebar / author profile
+   -------------------------------------------------------------------------- */
+
+.sidebar {
+  font-size: 0.85rem;
+
+  @include breakpoint($large) {
+    padding-right: 1.5em;
+  }
+
+  .author__name {
+    font-size: 1.05rem;
+    margin: 0.5em 0 0.25em;
+  }
+
+  .author__bio {
+    color: $ink-muted;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin-bottom: 1em;
+  }
+}
+
+.author__avatar img {
+  border: 1px solid $rule;
+  border-radius: 50%;
+  max-width: 140px;
+}
+
+/* The "Follow" button is inert in this theme — it toggles nothing and links
+   nowhere. Hide it rather than patch the upstream include. */
+.author__urls-wrapper button {
+  display: none !important;
+}
+
+.author__urls-wrapper {
+  li { margin-bottom: 0.4em; }
+
+  @include breakpoint($large) {
+    /* Upstream hides the list behind the (now removed) button on desktop;
+       force it visible since it is the only route to these links. */
+    ul.author__urls {
+      display: block !important;
+    }
+  }
+}
+
+.author__urls {
+  border: 0;
+  border-top: 1px solid $rule;
+  border-radius: 0;
+  box-shadow: none;
+  padding-top: 0.9em;
+  font-size: 0.82rem;
+
+  &:before, &:after { display: none; }
+
+  a {
+    color: $ink-muted;
+    text-decoration: none;
+
+    &:hover { color: $accent; text-decoration: underline; }
+  }
+
+  i, .ai {
+    color: $ink-faint;
+    margin-right: 0.15em;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Archive lists (Research, Projects, Teaching, Talks)
+   -------------------------------------------------------------------------- */
+
+.archive {
+  @include breakpoint($large) {
+    padding-left: 0;
+  }
+}
+
+.archive__subtitle {
+  margin-top: 2em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid $rule;
+  font-family: $font-serif-text;
+  font-size: 1.1rem;
+}
+
+.list__item {
+  /* Flat rows with a hairline rule — no card chrome, no shadows. */
+  padding: 1.5em 0;
+  border-bottom: 1px solid $rule;
+
+  &:first-of-type { padding-top: 0.75em; }
+
+  .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    font-size: 1.12rem;
+    line-height: 1.35;
+
+    a {
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+
+    /* The permalink chain icon adds noise next to every title. */
+    a[rel="permalink"] { display: none; }
+  }
+
+  .archive__item-excerpt {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    color: $ink-muted;
+    font-size: 0.92rem;
+    line-height: 1.6;
+
+    p { margin-bottom: 0.5em; }
+
+    img {
+      display: block;
+      margin-top: 0.75em;
+      border: 1px solid $rule;
+    }
+  }
+
+  .page__meta,
+  .page__date {
+    margin: 0;
+    color: $ink-faint;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+  }
+
+  > article > p {
+    margin: 0.15em 0 0;
+    color: $ink-muted;
+    font-size: 0.85rem;
+  }
+}
+
+/* Section headings on the Research page. */
+.collection__heading {
+  margin: 2.5em 0 0.25em;
+  padding-bottom: 0.45em;
+  border-bottom: 1px solid $rule-strong;
+  font-family: $font-serif-text;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  &:first-of-type { margin-top: 1.75em; }
+}
+
+.collection__empty {
+  margin: 1.1em 0 0;
+  color: $ink-faint;
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.collection__note {
+  margin-top: 2.5em;
+  padding-top: 1.2em;
+  border-top: 1px solid $rule;
+  color: $ink-muted;
+  font-size: 0.88rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Homepage
+   -------------------------------------------------------------------------- */
+
+.home {
+  &__intro {
+    margin-bottom: 2em;
+  }
+
+  &__name {
+    margin: 0 0 0.35em;
+    font-size: 2.1rem;
+    line-height: 1.1;
+  }
+
+  &__standfirst {
+    max-width: $measure;
+    margin: 0;
+    color: $ink-muted;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  &__section {
+    margin-top: 2.75em;
+  }
+
+  &__section-title {
+    margin: 0 0 0.75em;
+    padding-bottom: 0.45em;
+    border-bottom: 1px solid $rule-strong;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    padding: 0.7em 0;
+    border-bottom: 1px solid $rule;
+    font-size: 0.98rem;
+
+    &:last-child { border-bottom: 0; }
+  }
+
+  &__list-title {
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+
+  &__list-meta {
+    display: block;
+    color: $ink-muted;
+    font-size: 0.85rem;
+  }
+
+  &__list-status {
+    display: inline-block;
+    margin-top: 0.3em;
+    padding: 0.1em 0.5em;
+    background: $accent-wash;
+    border-radius: 2px;
+    color: $accent;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__more {
+    margin: 1em 0 0;
+    font-size: 0.88rem;
+
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   CV-style two-column list (used for Education on the homepage)
+   -------------------------------------------------------------------------- */
+
+.cv-list {
+  margin: 0;
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 0.7em 0;
+    border-bottom: 1px solid $rule;
+
+    &:last-child { border-bottom: 0; }
+  }
+
+  &__what {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  &__sub {
+    display: block;
+    margin-top: 0.2em;
+    color: $ink-faint;
+    font-size: 0.83rem;
+    line-height: 1.5;
+  }
+
+  &__when {
+    flex: 0 0 auto;
+    margin: 0;
+    color: $ink-muted;
+    font-size: 0.88rem;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  /* Stack on narrow screens rather than squeezing the year column. */
+  @media screen and (max-width: 30em) {
+    &__row {
+      flex-direction: column;
+      gap: 0.15em;
+    }
+    &__when { color: $ink-faint; font-size: 0.8rem; }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Figures
+   -------------------------------------------------------------------------- */
+
+figure,
+.figure-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 2%;
+  margin: 1.75em 0;
+
+  img {
+    margin-bottom: 0;
+  }
+
+  figcaption {
+    flex: 1 0 100%;
+    margin-top: 0.75em;
+    color: $ink-muted;
+    font-family: $font-sans-text;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+/* Two-up figures stack below the small breakpoint so neither image is
+   rendered unreadably narrow. */
+@media screen and (max-width: 37.5em) {
+  .figure-pair img {
+    width: 100% !important;
+    margin-bottom: 0.75em;
+  }
+}
+
+.home__figures {
+  .figure-pair:last-of-type { margin-bottom: 0; }
+}
+
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.page__footer {
+  margin-top: 4em;
+  background: transparent;
+  border-top: 1px solid $rule;
+  color: $ink-faint;
+  font-family: $font-sans-text;
+
+  footer {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+  }
+
+  a {
+    color: $ink-muted;
+    text-decoration: none;
+    &:hover { color: $accent; text-decoration: underline; }
+  }
+}
+
+.page__footer-copyright {
+  font-family: $font-sans-text;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.page__footer-follow {
+  ul { margin-bottom: 0.5em; }
+
+  li { font-size: 0.75rem; }
+
+  .social-icons a { color: $ink-muted; }
+
+  a:hover { color: $accent; }
+}
+
+
+/* --------------------------------------------------------------------------
+   Misc cleanups
+   -------------------------------------------------------------------------- */
+
+/* Taxonomy/meta footers are empty on this site and only add a stray rule. */
+.page__meta-title,
+.page__taxonomy { display: none; }
+
+.page__share { display: none; }
+
+/* Notices and code keep the paper tone rather than the theme's blue-grays. */
+code, pre {
+  font-size: 0.85em;
+}
+
+table {
+  font-size: 0.9rem;
+
+  th {
+    background: $accent-wash;
+    border-color: $rule;
+    color: $ink;
+  }
+  td { border-color: $rule; }
+}
+
+/* Keep the print stylesheet honest: the skin's colors would waste ink. */
+@media print {
+  a { color: #000 !important; text-decoration: underline; }
+  .sidebar,
+  .masthead,
+  .page__footer { display: none !important; }
+  .page__content > * { max-width: none; }
+}

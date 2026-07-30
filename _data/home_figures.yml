@@ -1,0 +1,31 @@
+# Figure pairs shown on the homepage.
+#
+# Each entry renders one <figure> with two side-by-side images and a caption.
+# Widths are percentages of the figure width and should sum to a little under
+# 100 to leave a gutter. Paths are relative to the site root.
+- caption: "Ride pooling model and simulation."
+  images:
+    - src: /files/ride-pooling_model.svg
+      alt: "Schematic of the ride pooling model"
+      width: 59
+    - src: /files/ride-pooling_simulation.gif
+      alt: "Animated simulation of a ride pooling system"
+      width: 39
+
+- caption: "Opinion dynamics of the Hegselmann&ndash;Krause model."
+  images:
+    - src: /files/opinion-dynamics_HK.png
+      alt: "Opinion trajectories in the Hegselmann-Krause model"
+      width: 50
+    - src: /files/opinion-dynamics_phase-diag.png
+      alt: "Phase diagram of the Hegselmann-Krause model"
+      width: 47
+
+- caption: "Numerical analysis of the restricted three-body problem: an Arenstorf orbit computed with my own RK4 algorithm, and the unstable Lagrange point L1."
+  images:
+    - src: /files/Arenstorf_own-RK4.svg
+      alt: "Arenstorf orbit computed with a custom RK4 integrator"
+      width: 48
+    - src: /files/L1_unstable.svg
+      alt: "Instability of the Lagrange point L1"
+      width: 48
