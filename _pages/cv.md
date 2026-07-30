@@ -21,8 +21,8 @@ A more detailed CV is available as a [PDF]({{ base_path }}/files/CV_Daniel-Fisch
 
 ## Work experience
 
-<!-- TODO(Daniel): add the start/end dates for QuantCo to match the format below. -->
-* Data Scientist
+
+* Fall 2025 until Summer 2026: Data Scientist
   * **[QuantCo](https://www.quantco.com/)**, London and Munich
 
 * Spring 2022: Research Assistant
