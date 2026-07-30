@@ -18,6 +18,10 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# Jekyll 3.x (pinned by github-pages) still expects webrick, which was removed
+# from Ruby's stdlib in 3.0. Required for `jekyll serve` on Ruby >= 3.
+gem "webrick", "~> 1.8"
+
 # Plugins. These must match the `plugins:` list in _config.yml. They all ship
 # inside the github-pages gem, but are listed explicitly so `bundle exec jekyll
 # build` behaves the same way locally as it does on GitHub Pages.

@@ -10,16 +10,68 @@ Built with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages from the
 
 ## Running it locally
 
+Needs Ruby 3.x. macOS ships 2.6, which is too old for the current
+`github-pages` gem:
+
 ```bash
+brew install ruby@3.3
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"   # keg-only, so this is required
+ruby -v                                              # must print 3.3.x, not 2.6
+
 bundle install
-bundle exec jekyll serve --config _config.yml,_config.dev.yml
+bundle exec jekyll serve --livereload --config _config.yml,_config.dev.yml
 ```
 
-Then open <http://localhost:4000>. `_config.dev.yml` points `url` at localhost so
-absolute links resolve while previewing.
+Then open <http://localhost:4000>.
 
-Note that `_config.yml` is **not** reloaded automatically — restart the server
-after editing it.
+Two things that are easy to get wrong:
+
+- **`--config _config.yml,_config.dev.yml` is not optional.** `_config.dev.yml`
+  overrides `url` to `http://localhost:4000`, which `_includes/base_path` feeds
+  into every layout — including the stylesheet link. Leave it off and you get an
+  unstyled page whose links all point at the production domain.
+- `_config.yml` is **not** reloaded automatically. Restart the server after
+  editing it.
+
+### Without installing Ruby 3.x
+
+Jekyll 3.9.5 does run on the system Ruby 2.6 if you pin the transitive gems that
+have since dropped support for it. Useful when you cannot install anything
+system-wide:
+
+```bash
+# Gems must live outside $HOME — RubyGems insists on writing ~/.gem.
+export GEM_HOME="$PWD/.gems" GEM_PATH="$PWD/.gems"
+export PATH="$GEM_HOME/bin:$PATH"
+
+gem install ffi -v 1.15.5 --no-document
+gem install i18n -v 1.14.8 --no-document
+gem install public_suffix -v 5.1.1 --no-document
+gem install jekyll -v 3.9.5 kramdown-parser-gfm --no-document
+gem install jekyll-sitemap jekyll-feed jekyll-redirect-from --no-document
+
+# Skips the Gemfile, which would otherwise pull the whole github-pages gem.
+JEKYLL_NO_BUNDLER_REQUIRE=true jekyll serve \
+  --config _config.yml,_config.dev.yml
+```
+
+On Apple silicon, if a gem with a native extension fails to load with an
+"incompatible architecture" error, it fetched an x86_64 build — reinstall it with
+`--platform arm64-darwin`.
+
+### Checking links
+
+The same check CI runs, against a built site:
+
+```bash
+bundle exec jekyll build --config _config.yml,_config.dev.yml
+htmlproofer ./_site --disable-external --allow-hash-href \
+  --ignore-empty-alt --no-enforce-https --ignore-urls "/^mailto:/"
+```
+
+`mailto:` is skipped because `author.email` is obfuscated as `d_fisch [at]
+mit.edu` on purpose; html-proofer reads that as an invalid address. On
+html-proofer 3.x the flag is `--url-ignore` rather than `--ignore-urls`.
 
 ## Adding content
 

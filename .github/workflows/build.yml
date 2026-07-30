@@ -27,8 +27,14 @@ jobs:
       - name: Check internal links
         run: |
           gem install html-proofer -v '~> 5.0'
+          # mailto: is ignored because author.email is deliberately obfuscated
+          # as "d_fisch [at] mit.edu" to deter scrapers. _includes/author-profile.html
+          # wraps it in a mailto: href, which html-proofer rightly reads as an
+          # invalid address. The obfuscation is intentional, so skip the scheme
+          # rather than publish a scrapable address.
           htmlproofer ./_site \
             --disable-external \
             --allow-hash-href \
             --ignore-empty-alt \
-            --no-enforce-https
+            --no-enforce-https \
+            --ignore-urls "/^mailto:/"

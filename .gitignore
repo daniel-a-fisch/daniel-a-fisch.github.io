@@ -4,5 +4,8 @@ _site/
 .sass-cache/
 .bundle/
 vendor/
+# Local gem installs, if you point GEM_HOME into the repo (see README).
+.gems/
+.fakehome/
 node_modules/
 .DS_Store
