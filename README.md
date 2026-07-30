@@ -28,7 +28,7 @@ title: "Mathematical Modeling of Opinion Dynamics"
 label: "Master's thesis"
 venue: "University of Cambridge"
 date: 2023-05-01
-coauthors: "Jane Doe, John Smith"  # optional
+authors: "Jane Doe, Daniel Fisch, John Smith"  # optional; list everyone, including yourself
 summary: "A short description of the research"  # optional
 link: "https://example.com/paper"  # optional
 paper: "/files/paper.pdf"  # optional, relative to site root

@@ -3,7 +3,7 @@ title: "An Offer You Can't Refuse: New Hire Real Wage Rigidities in the Northern
 label: "Master's thesis"
 venue: "Barcelona School of Economics"
 date: 2024-06-01
-coauthors: "Rafael Cappabianca, Abel Hofflin, Nicolas Marti, Anna Ruffert"
+authors: "Rafael Cappabianca, Daniel Fisch, Abel Hofflin, Nicolas Marti, Anna Ruffert"
 summary: "Evidence of new hire total compensation rigidity in real terms, especially in the form of bunching, using the Veneto Workers History dataset"
 link: "http://hdl.handle.net/10230/68457"
 redirect_from:

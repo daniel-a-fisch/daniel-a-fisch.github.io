@@ -9,6 +9,10 @@ baseurl     : ""
 locale      : "en_US"
 timezone    : America/New_York
 
+# No theme. This site is hand-written, but the github-pages gem otherwise falls
+# back to jekyll-theme-primer and emits an unused 76 KB assets/css/style.css.
+theme       :
+
 # Build pages for future-dated documents. Needed because a forthcoming paper is
 # a normal thing to list: with the default (false) Jekyll would show the item in
 # the research list but skip its page, leaving a broken link.
@@ -36,10 +40,10 @@ author:
 nav:
   - title: "Research"
     url: /research/
-  - title: "CV"
-    url: /cv/
   - title: "Teaching"
     url: /teaching/
+  - title: "CV"
+    url: /cv/
   - title: "Reading"
     url: /reading-list/
 

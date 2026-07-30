@@ -1,6 +1,7 @@
 ---
 title: "An analytical framework for modeling the bus occupancy dynamics in ride pooling systems"
 label: "Bachelor's thesis"
+authors: "Daniel Fisch"
 venue: "Max Planck Institute for Dynamics and Self-Organization"
 date: 2022-07-01
 summary: "A simplified analytical framework for the bus occupancy dynamics of ride pooling systems"

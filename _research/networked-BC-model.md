@@ -3,7 +3,7 @@ title: "Nobody Can (And Wants To) Talk To Everyone: A Networked Bounded Confiden
 label: "Term project"
 venue: "Barcelona School of Economics"
 date: 2024-03-01
-coauthors: "Mareike"
+authors: "Daniel Fisch, Mareike Sehrer"
 summary: "A networked bounded confidence model combining DeGroot structural networks with Hegselmann-Krause bounded confidence dynamics"
 redirect_from:
   - /projects/networked-BC-model/

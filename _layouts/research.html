@@ -7,8 +7,8 @@ layout: default
   <span>{{ page.label | upcase }}</span>
   {%- if page.venue %} &middot; {{ page.venue }}{% endif -%}
   {%- if page.date %} &middot; {{ page.date | date: '%Y' }}{% endif -%}
-  {%- if page.coauthors -%}
-    <br>{{ page.coauthors }}
+  {%- if page.authors -%}
+    <br>{{ page.authors }}
   {%- endif -%}
 </div>
 

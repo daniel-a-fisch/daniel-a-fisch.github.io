@@ -5,16 +5,22 @@
     <a href="#content" class="skip-link">Skip to content</a>
 
     <header class="site-header">
-      <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
-      <nav class="site-nav">
-        {%- for item in site.nav -%}
-          {%- if item.url == page.url -%}
-            <a href="{{ item.url | relative_url }}" class="is-current" aria-current="page">{{ item.title }}</a>
-          {%- else -%}
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          {%- endif -%}
-        {%- endfor -%}
-      </nav>
+      {%- comment -%}
+        Name and nav share one container so the name lines up with the body text
+        below it, rather than sitting on a different measure.
+      {%- endcomment -%}
+      <div class="site-header__inner">
+        <a href="{{ "/" | relative_url }}" class="site-header__name">{{ site.title }}</a>
+        <nav class="site-nav">
+          {%- for item in site.nav -%}
+            {%- if item.url == page.url -%}
+              <a href="{{ item.url | relative_url }}" class="is-current" aria-current="page">{{ item.title }}</a>
+            {%- else -%}
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </nav>
+      </div>
     </header>
 
     <main class="site-main" id="content">

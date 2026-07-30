@@ -1,6 +1,7 @@
 ---
 title: "Predicting Opinion Phases in the Hegselmann-Krause Model"
 label: "Part III essay"
+authors: "Daniel Fisch"
 venue: "University of Cambridge"
 date: 2023-05-01
 summary: "An overview of opinion dynamics models with deep dive into the non-linear Hegselmann-Krause bounded confidence model and its three phases"

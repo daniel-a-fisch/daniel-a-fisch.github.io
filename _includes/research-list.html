@@ -10,15 +10,13 @@
         <div class="research-item__label">
           {{- item.label | upcase -}}
           {%- if item.venue %} &middot; {{ item.venue }}{% endif -%}
+          {%- if item.date %} &middot; {{ item.date | date: '%Y' }}{% endif -%}
         </div>
-        {%- if item.date -%}
-        <div class="research-item__date">{{ item.date | date: '%Y' }}</div>
-        {%- endif -%}
         <h3 class="research-item__title">
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         </h3>
-        {%- if item.coauthors -%}
-        <div class="research-item__meta">{{ item.coauthors }}</div>
+        {%- if item.authors -%}
+        <div class="research-item__meta">{{ item.authors }}</div>
         {%- endif -%}
         {%- if item.summary -%}
         <div class="research-item__summary">{{ item.summary }}</div>
