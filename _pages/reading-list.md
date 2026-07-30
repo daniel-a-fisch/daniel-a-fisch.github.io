@@ -1,12 +1,8 @@
 ---
-layout: archive
-permalink: /reading-list/
+layout: page
 title: "Reading List"
-excerpt: "Online resources on economics, mathematics, and complex systems that I find worth sharing."
-author_profile: true
+permalink: /reading-list/
 ---
-
-{% include base_path %}
 
 A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list — feel free to send me your recommendations: {{ site.author.email }}.
 
@@ -26,4 +22,3 @@ A small collection of links to online resources that I find exciting and insight
 - [Social and Economic Networks](https://www.youtube.com/@socialandeconomicnetworks4586/playlists): An interesting online video series about networks and economics by Prof. Matthew Jackson. 
 - [Veritasium](https://www.youtube.com/@veritasium): Popular science channel covering a wide range of topics from the world of science, from [maths](https://www.youtube.com/watch?v=ovJcsL7vyrk) to [physics](https://www.youtube.com/watch?v=fDek6cYijxI) to [game theory](https://www.youtube.com/watch?v=mScpHTIi-kM).
 - [Primer](https://www.youtube.com/@PrimerBlobs): Cute animations about popular science topics.
-

@@ -1,21 +1,76 @@
-{% include base_path %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-{% include seo.html %}
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  <!-- Preload font -->
+  <link rel="preload" href="{{ '/assets/fonts/inter-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
+  <!-- Favicons -->
+  <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/images/android-chrome-192x192.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/images/android-chrome-512x512.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}">
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ site.author.avatar | absolute_url }}">
 
-<meta http-equiv="cleartype" content="on">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ site.author.avatar | absolute_url }}">
+
+  <!-- Schema.org Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "jobTitle": "{{ site.author.role }}",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "{{ site.author.institution }}"
+    },
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "{{ site.author.mit }}",
+      "{{ site.author.orcid }}",
+      "{{ site.author.github }}",
+      "{{ site.author.linkedin }}"{% if site.author.googlescholar and site.author.googlescholar != "" %},
+      "{{ site.author.googlescholar }}"{% endif %}
+    ]
+  }
+  </script>
+
+  <!-- MathJax (only when needed) -->
+  {% if page.math %}
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$']],
+        displayMath: [['$$','$$']]
+      },
+      options: {
+        skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endif %}
+</head>

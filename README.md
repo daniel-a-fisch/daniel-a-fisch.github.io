@@ -1,206 +1,95 @@
 # daniel-a-fisch.github.io
 
-Personal academic website: <https://daniel-a-fisch.github.io/>
+Personal academic website for Daniel A. Fisch, PhD student in Economics at MIT. Built with Jekyll and hosted on GitHub Pages from the `master` branch. This is a hand-written site with no upstream theme.
 
-Built with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages from the
-`master` branch. The theme derives from
-[AcademicPages](https://academicpages.github.io/), itself a fork of
-[Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/)
-(MIT licensed — see `LICENSE`).
+## Running locally
 
-## Running it locally
-
-Needs Ruby 3.x. macOS ships 2.6, which is too old for the current
-`github-pages` gem:
+Ruby 3.3 is installed at `/opt/homebrew/opt/ruby@3.3` (keg-only, so the PATH export is required):
 
 ```bash
-brew install ruby@3.3
-export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"   # keg-only, so this is required
-ruby -v                                              # must print 3.3.x, not 2.6
-
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
 bundle install
-bundle exec jekyll serve --livereload --config _config.yml,_config.dev.yml
+bundle exec jekyll serve --livereload
 ```
 
-Then open <http://localhost:4000>.
+Then open <http://localhost:4000> in your browser.
 
-Two things that are easy to get wrong:
+**Note:** `_config.yml` is not reloaded automatically — restart `jekyll serve` after editing it.
 
-- **`--config _config.yml,_config.dev.yml` is not optional.** `_config.dev.yml`
-  overrides `url` to `http://localhost:4000`, which `_includes/base_path` feeds
-  into every layout — including the stylesheet link. Leave it off and you get an
-  unstyled page whose links all point at the production domain.
-- `_config.yml` is **not** reloaded automatically. Restart the server after
-  editing it.
+## Adding a research item
 
-Use Ruby 3.3 rather than the system 2.6, so that a local build exercises the
-same toolchain as CI. On 2.6 the link check silently runs an old html-proofer
-that misses whole classes of problem — see [Checking links](#checking-links).
+This is the main content maintenance task. Create one file in `_research/` with the appropriate front matter, and it will appear automatically on both the homepage (recent items) and the full research page at `/research/`, sorted by date (newest first).
 
-### Without installing Ruby 3.x
+Example front matter:
 
-Jekyll 3.9.5 will run on the system Ruby 2.6 if you pin every transitive gem
-that has since dropped support for it. Workable if you cannot install anything
-system-wide, but it is a treadmill — each new release adds another pin — and it
-**cannot reproduce CI's link check**:
-
-```bash
-# Gems must live outside $HOME — RubyGems insists on writing ~/.gem.
-export GEM_HOME="$PWD/.gems" GEM_PATH="$PWD/.gems"
-export PATH="$GEM_HOME/bin:$PATH"
-
-# One `gem install` per pin: RubyGems rejects -v with multiple gem names.
-gem install ffi -v 1.15.5 --no-document
-gem install i18n -v 1.14.8 --no-document
-gem install public_suffix -v 5.1.1 --no-document
-gem install rouge -v 3.30.0 --no-document        # 4.x needs Ruby >= 2.7
-gem install jekyll -v 3.9.5 --no-document
-gem install kramdown-parser-gfm --no-document    # _config.yml sets input: GFM
-gem install jekyll-sitemap jekyll-feed jekyll-redirect-from --no-document
-
-# Skips the Gemfile, which would otherwise pull the whole github-pages gem.
-JEKYLL_NO_BUNDLER_REQUIRE=true jekyll serve \
-  --config _config.yml,_config.dev.yml
+```yaml
+---
+title: "Mathematical Modeling of Opinion Dynamics"
+label: "Master's thesis"
+venue: "University of Cambridge"
+date: 2023-05-01
+coauthors: "Jane Doe, John Smith"  # optional
+summary: "A short description of the research"  # optional
+link: "https://example.com/paper"  # optional
+paper: "/files/paper.pdf"  # optional, relative to site root
+math: true  # optional, only if the body contains LaTeX
+---
 ```
 
-Omit the `rouge` pin and the three plugin gems all fail to install, leaving you
-with `command not found: jekyll`.
+A future `date:` is fine — `future: true` is set in `_config.yml`, so a forthcoming
+paper gets its page built and sorts to the top of the list.
 
-On Apple silicon, if a gem with a native extension fails to load with an
-"incompatible architecture" error, it fetched an x86_64 build — reinstall it with
-`--platform arm64-darwin`.
+The `label` field is free text — use "Working paper", "Work in progress", "Master's thesis", "Bachelor's thesis", or whatever is appropriate for the item.
 
-### Checking links
+Because research items are pulled automatically from `_research/`, adding a working paper requires no other edits to pages or navigation — just add the file.
 
-The same check CI runs, against a built site. Needs html-proofer 5:
+## Adding a page
+
+Create a new file in `_pages/` with `layout: page` and a `permalink`, then add it to the `nav:` list in `_config.yml` if it should appear in the top navigation.
+
+## Preserved URLs
+
+The old site's URLs are kept alive with `jekyll-redirect-from` via `redirect_from:`
+front matter, so nothing already indexed 404s: `/about/` and `/portfolio/`,
+`/publications/`, `/projects/` (and each `/projects/<name>/`), `/resume`, `/talks/`
+and the old per-item `/talks/…` and `/teaching/…` paths. The `talks` and `teaching`
+collections no longer exist — those entries live in `_pages/cv.md` and
+`_pages/teaching.md`.
+
+## Editing research interests
+
+Edit `_data/interests.yml`. The list appears on the homepage automatically.
+
+## Repository layout
+
+| Path | What it is |
+| --- | --- |
+| `_config.yml` | Site configuration |
+| `_pages/` | Content pages (homepage, research, CV, teaching, reading list, 404) |
+| `_research/` | Research items (each file is one project/paper/thesis) |
+| `_layouts/` | HTML templates for page types |
+| `_includes/` | Reusable HTML snippets |
+| `_data/` | YAML data files (research interests) |
+| `assets/` | CSS, JavaScript, and other static assets |
+| `images/` | Images and photos |
+| `files/` | PDFs and other downloadable files |
+
+## Checking links
+
+This is the same command CI runs. Requires html-proofer 5:
 
 ```bash
-bundle exec jekyll build --config _config.yml,_config.dev.yml
+bundle exec jekyll build
 htmlproofer ./_site --disable-external --allow-hash-href \
   --ignore-empty-alt --no-enforce-https --ignore-urls "/^mailto:/"
 ```
 
-`mailto:` is skipped because `author.email` is obfuscated as `d_fisch [at]
-mit.edu` on purpose; html-proofer reads that as an invalid address.
+The `mailto:` ignore is necessary because `site.author.email` is deliberately obfuscated (`d_fisch [at] mit.edu`) to defeat scrapers. html-proofer would read it as an invalid email address, so we tell it to skip `mailto:` links.
 
-**Do not run this on html-proofer 3.x expecting the same answer.** Besides the
-flag renames (`--url-ignore` for `--ignore-urls`, `--empty-alt-ignore` for
-`--ignore-empty-alt`), v3 folds *missing* and *empty* `alt` into a single check,
-so `--empty-alt-ignore` also suppresses images that have no `alt` at all. v5
-checks the two separately. A v3 run therefore passes on images that v5 — and so
-CI — correctly rejects.
+## Email obfuscation
 
-## Adding content
+The email address in `_config.yml` is obfuscated on purpose and must never be turned into a `mailto:` link. It is rendered as plain text wherever it appears (contact section, reading list).
 
-Each kind of content is one markdown file in one directory. No other edits are
-needed; the listing pages and homepage pick new files up automatically.
+## Math rendering
 
-### A paper — `_research/`
-
-```yaml
----
-title: "Title of the paper"
-collection: research
-status: working-paper        # working-paper | work-in-progress | published
-date: 2026-01-15             # controls ordering (newest first)
-coauthors: "Jane Doe, John Roe"   # optional
-excerpt: "One or two sentences of abstract."
-paperurl: "/files/my-paper.pdf"   # optional; put the PDF in files/
-venue: "Journal Name"             # optional; only for status: published
-citation: "Fisch, D. (2026). ..." # optional
----
-
-Body text — the full abstract, or whatever should appear on the paper's own page.
-```
-
-`status` decides which heading it appears under on `/research/`. The three
-recognised values are `working-paper`, `work-in-progress`, and `published`; a
-file with any other value will not be listed.
-
-### A project — `_projects/`
-
-```yaml
----
-title: "Project title"
-collection: projects
-excerpt: "Short summary.<br/><img src='/files/figure.png' width='40%'>"
----
-```
-
-Used for pre-doctoral work. Listed on `/projects/` in filename order.
-
-### A talk — `_talks/`
-
-```yaml
----
-title: "Talk title"
-collection: talks
-type: "Seminar"
-permalink: /talks/2026-some-seminar/
-venue: "Institution, Seminar Series"
-date: 2026-03-01
-location: "Cambridge, United Kingdom"
----
-```
-
-`/talks/` is not currently in the site navigation (see `_data/navigation.yml`) —
-add it once there are a few entries.
-
-### A teaching entry — `_teaching/`
-
-```yaml
----
-title: "Course name"
-collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2026-spring-something/
-venue: "Institution"
-date: 2026-01-01
-location: "City, Country"
----
-```
-
-### A new page
-
-Create `_pages/<name>.md` with a `permalink:`, then add it to
-`_data/navigation.yml` to put it in the menu:
-
-```yaml
----
-layout: archive          # or `single` for a plain page
-title: "Page title"
-permalink: /page-name/
-author_profile: true
----
-```
-
-### Figures on the homepage
-
-Edit `_data/home_figures.yml` — no layout changes needed.
-
-## Layout of the repo
-
-| Path | What it is |
-| --- | --- |
-| `_pages/` | Standalone pages, each with its own `permalink` |
-| `_research/`, `_projects/`, `_teaching/`, `_talks/` | Content collections |
-| `_data/` | Navigation, UI strings, homepage figures |
-| `_layouts/` | Page templates. `home.html` is custom; the rest are upstream |
-| `_includes/` | Partials. `head/custom.html` holds favicons, fonts, MathJax |
-| `_sass/_custom.scss` | **All site-specific styling.** Imported last so it overrides the base theme |
-| `_sass/` (rest) | Upstream theme styles — avoid editing, override in `_custom.scss` |
-| `files/` | PDFs and figures linked from content |
-| `images/` | Avatar and favicons |
-| `assets/` | Theme CSS/JS |
-
-## Notes
-
-- **Analytics** is off. Google Universal Analytics was shut down in 2023, so the
-  old config was dead code; wiring up GA4 would need a new include under
-  `_includes/analytics-providers/`.
-- **Math** is rendered by MathJax 3, configured in `_includes/head/custom.html`.
-  Use `$...$` for inline and `$$...$$` for display math.
-- **Google Scholar**: setting `author.googlescholar` in `_config.yml`
-  automatically adds a link on `/research/` and in the sidebar.
-- CI (`.github/workflows/build.yml`) builds the site and checks internal links on
-  every push and pull request.
+LaTeX math is rendered with MathJax 3, opt-in per page via `math: true` in the front matter. Use `$$...$$` for display equations and `$...$` for inline math.
