@@ -1,6 +1,6 @@
 ---
 title: "An Offer You Can't Refuse: New Hire Real Wage Rigidities in the Northern Italian Labour Market"
-excerpt: "A short abstract of my master's project together with Rafael Cappabianca, Abel Hofflin, Nicolas Marti, Anna Ruffert.<br/><img src='/files/DMP_shock.png' width='40%'>"
+excerpt: "A short abstract of my master's project together with Rafael Cappabianca, Abel Hofflin, Nicolas Marti, Anna Ruffert.<br/><img src='/files/DMP_shock.png' alt='DMP model with rigidities' width='40%'>"
 collection: projects
 ---
 *This project has been published by UPF in their [e-repository](http://hdl.handle.net/10230/68457).*

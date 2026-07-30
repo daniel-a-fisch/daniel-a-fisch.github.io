@@ -33,21 +33,29 @@ Two things that are easy to get wrong:
 - `_config.yml` is **not** reloaded automatically. Restart the server after
   editing it.
 
+Use Ruby 3.3 rather than the system 2.6, so that a local build exercises the
+same toolchain as CI. On 2.6 the link check silently runs an old html-proofer
+that misses whole classes of problem — see [Checking links](#checking-links).
+
 ### Without installing Ruby 3.x
 
-Jekyll 3.9.5 does run on the system Ruby 2.6 if you pin the transitive gems that
-have since dropped support for it. Useful when you cannot install anything
-system-wide:
+Jekyll 3.9.5 will run on the system Ruby 2.6 if you pin every transitive gem
+that has since dropped support for it. Workable if you cannot install anything
+system-wide, but it is a treadmill — each new release adds another pin — and it
+**cannot reproduce CI's link check**:
 
 ```bash
 # Gems must live outside $HOME — RubyGems insists on writing ~/.gem.
 export GEM_HOME="$PWD/.gems" GEM_PATH="$PWD/.gems"
 export PATH="$GEM_HOME/bin:$PATH"
 
+# One `gem install` per pin: RubyGems rejects -v with multiple gem names.
 gem install ffi -v 1.15.5 --no-document
 gem install i18n -v 1.14.8 --no-document
 gem install public_suffix -v 5.1.1 --no-document
-gem install jekyll -v 3.9.5 kramdown-parser-gfm --no-document
+gem install rouge -v 3.30.0 --no-document        # 4.x needs Ruby >= 2.7
+gem install jekyll -v 3.9.5 --no-document
+gem install kramdown-parser-gfm --no-document    # _config.yml sets input: GFM
 gem install jekyll-sitemap jekyll-feed jekyll-redirect-from --no-document
 
 # Skips the Gemfile, which would otherwise pull the whole github-pages gem.
@@ -55,13 +63,16 @@ JEKYLL_NO_BUNDLER_REQUIRE=true jekyll serve \
   --config _config.yml,_config.dev.yml
 ```
 
+Omit the `rouge` pin and the three plugin gems all fail to install, leaving you
+with `command not found: jekyll`.
+
 On Apple silicon, if a gem with a native extension fails to load with an
 "incompatible architecture" error, it fetched an x86_64 build — reinstall it with
 `--platform arm64-darwin`.
 
 ### Checking links
 
-The same check CI runs, against a built site:
+The same check CI runs, against a built site. Needs html-proofer 5:
 
 ```bash
 bundle exec jekyll build --config _config.yml,_config.dev.yml
@@ -70,8 +81,14 @@ htmlproofer ./_site --disable-external --allow-hash-href \
 ```
 
 `mailto:` is skipped because `author.email` is obfuscated as `d_fisch [at]
-mit.edu` on purpose; html-proofer reads that as an invalid address. On
-html-proofer 3.x the flag is `--url-ignore` rather than `--ignore-urls`.
+mit.edu` on purpose; html-proofer reads that as an invalid address.
+
+**Do not run this on html-proofer 3.x expecting the same answer.** Besides the
+flag renames (`--url-ignore` for `--ignore-urls`, `--empty-alt-ignore` for
+`--ignore-empty-alt`), v3 folds *missing* and *empty* `alt` into a single check,
+so `--empty-alt-ignore` also suppresses images that have no `alt` at all. v5
+checks the two separately. A v3 run therefore passes on images that v5 — and so
+CI — correctly rejects.
 
 ## Adding content
 

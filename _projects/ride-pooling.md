@@ -1,6 +1,6 @@
 ---
 title: "An analytical framework for modeling the bus occupancy dynamics in ride pooling systems"
-excerpt: "A short description of my bachelor thesis at the Max Planck Institute for Dynamics and Self-Organization about the dynamics of ride pooling.<br/><img src='/files/ride-pooling_simulation.gif' width='40%'>"
+excerpt: "A short description of my bachelor thesis at the Max Planck Institute for Dynamics and Self-Organization about the dynamics of ride pooling.<br/><img src='/files/ride-pooling_simulation.gif' alt='Animated simulation of a ride pooling system' width='40%'>"
 collection: projects
 ---
 
@@ -9,8 +9,8 @@ Individual cars are still a vital part of modern society transportation. Neverth
 The emerging transport mode of ride pooling combines the journeys of multiple users into a single on-demand bus. Thus it could mitigate the negative impact of individual transportation on the environment and the society.
 
 <p float="left">
-  <img align="top" src="/files/private-car.png" width="48%" />
-  <img align="top" src="/files/ride-pooling.png" width="48%" /><br/>
+  <img align="top" src="/files/private-car.png" alt="Individual private car journeys" width="48%" />
+  <img align="top" src="/files/ride-pooling.png" alt="Multiple journeys combined into a single on-demand bus" width="48%" /><br/>
   <em>Ride pooling combines multiple journeys into a single on-demand bus [figure used with the permission of Steffen Mühle].</em>
 </p>
 
@@ -23,7 +23,7 @@ the bus occupancy and how it changes over time.
 This reduces the high-dimensional simulation space to a one-dimensional perspective without access to any instantaneous information about the spatial configuration of the system. 
 Accordingly, a generic modeling framework is presented that is kept as simple as possible and which can predict both statistical information and dynamic behavior of the variable bottom-up.
 <p float="left">
-  <img align="top" src="/files/rp_framework.png" width="75%" /><br/>
+  <img align="top" src="/files/rp_framework.png" alt="Structure of suggested framework" width="75%" /><br/>
   <em>Structure of suggested framework.</em>
 </p>
 

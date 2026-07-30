@@ -1,6 +1,6 @@
 ---
 title: "Predicting Opinion Phases in the Hegselmann-Krause Model"
-excerpt: "A short description of my Part III essay about opinion dynamics as part of my MASt in Applied Mathematics at the University of Cambridge.<br/><img src='/files/opinion-dynamics_HK.png' width='40%'>"
+excerpt: "A short description of my Part III essay about opinion dynamics as part of my MASt in Applied Mathematics at the University of Cambridge.<br/><img src='/files/opinion-dynamics_HK.png' alt='Opinion trajectories in the Hegselmann-Krause model' width='40%'>"
 collection: projects
 ---
 *The code for this project is available on my [GitHub](https://github.com/daniel-a-fisch/Part-III-essay_opinion-dynamics).*
@@ -11,9 +11,9 @@ In order to address the diversity of the research area of opinion dynamics, I ga
 In addition, I used simple examples to illustrate two relevant mathematical concepts in opinion dynamics: the extra effort involved in sequential updating due to randomness and the network structure of agents, which is particularly relevant for simultaneous updating.
 
 <p float="left">
-  <img align="top" src="/files/HK-consensus.png" width="32%" />
-  <img align="top" src="/files/HK-polarization.png" width="32%" />
-  <img align="top" src="/files/HK-cluster.png" width="32%" /><br/>
+  <img align="top" src="/files/HK-consensus.png" alt="Consensus phase of the HK model" width="32%" />
+  <img align="top" src="/files/HK-polarization.png" alt="Polarization phase of the HK model" width="32%" />
+  <img align="top" src="/files/HK-cluster.png" alt="Fragmentation phase of the HK model" width="32%" /><br/>
   <em>The different opinion phases of the HK model: consensus, polarization and fragmentation.</em>
 </p>
 I then delved deeper into the non-linear HK bounded confidence model with the three opinion phases: consensus, polarization and fragmentation. It is possible to gain some fundamental insights using analytical methods, yet other phenomena are better investigated using computer simulations.
@@ -21,8 +21,8 @@ The HK model operates according to the principle that dense regions have a stron
 Using stability analysis, it was possible understand the number of different clusters emerging from the HK model in the fragmented phase better. This improves the theoretical estimate for the number of clusters from $\frac{1}{\varepsilon} \rightarrow \frac{1}{2\varepsilon}$, which is much closer to simulation results.
 I also looked at alterations of the original model. Introducing a small noise leads to quasi-consensus after long enough times. However, a too large noise renders quasi-consensus impossible since opinion clusters can split off and (at least temporarily) continue to evolve independently.
 <p float="left">
-  <img align="top" src="/files/opinion-dynamics_HK.png" width="48%" />
-  <img align="top" src="/files/HK-noisy-no-quasi-cons.png" width="48%" /><br/>
+  <img align="top" src="/files/opinion-dynamics_HK.png" alt="Small noise leading to quasi-consensus" width="48%" />
+  <img align="top" src="/files/HK-noisy-no-quasi-cons.png" alt="Large noise leading to temporary cluster formation" width="48%" /><br/>
   <em>Small noise leads to quasi-consensus. However, large noise leads to temporary cluster formation.</em>
 </p>
 The mathematical methods involved are probability theory, linear algebra, stochastic processes, PDEs, mean-field approximations and computing.
