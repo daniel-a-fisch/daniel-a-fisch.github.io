@@ -1,0 +1,29 @@
+{%- assign items = site.research | sort: 'date' | reverse -%}
+{%- if include.limit -%}
+  {%- assign items = items | slice: 0, include.limit -%}
+{%- endif -%}
+
+<div class="research-list">
+  {%- if items.size > 0 -%}
+    {%- for item in items -%}
+      <article class="research-item">
+        <div class="research-item__label">
+          {{- item.label | upcase -}}
+          {%- if item.venue %} &middot; {{ item.venue }}{% endif -%}
+          {%- if item.date %} &middot; {{ item.date | date: '%Y' }}{% endif -%}
+        </div>
+        <h3 class="research-item__title">
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        </h3>
+        {%- if item.authors -%}
+        <div class="research-item__meta">{{ item.authors }}</div>
+        {%- endif -%}
+        {%- if item.summary -%}
+        <div class="research-item__summary">{{ item.summary }}</div>
+        {%- endif -%}
+      </article>
+    {%- endfor -%}
+  {%- else -%}
+    <p>No research items listed yet.</p>
+  {%- endif -%}
+</div>

@@ -1,31 +1,35 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
+<html lang="en">
+  {% include head.html %}
   <body>
+    <a href="#content" class="skip-link">Skip to content</a>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    <header class="site-header">
+      {%- comment -%}
+        Name and nav share one container so the name lines up with the body text
+        below it, rather than sitting on a different measure.
+      {%- endcomment -%}
+      <div class="site-header__inner">
+        <a href="{{ "/" | relative_url }}" class="site-header__name">{{ site.title }}</a>
+        <nav class="site-nav">
+          {%- for item in site.nav -%}
+            {%- if item.url == page.url -%}
+              <a href="{{ item.url | relative_url }}" class="is-current" aria-current="page">{{ item.title }}</a>
+            {%- else -%}
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </nav>
+      </div>
+    </header>
 
-    {{ content }}
+    <main class="site-main" id="content">
+      {{ content }}
+    </main>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
+    <footer class="site-footer">
+      <p>{{ site.author.name }} &copy; {{ site.time | date: '%Y' }}</p>
+      <p>Built with Jekyll and hosted on GitHub Pages.</p>
+    </footer>
   </body>
 </html>

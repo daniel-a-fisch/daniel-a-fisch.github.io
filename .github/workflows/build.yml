@@ -1,0 +1,40 @@
+name: Build and check links
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+
+      # Internal links, images and scripts must all resolve. This is what
+      # catches the "references a file that does not exist" class of bug, such
+      # as favicons or PDFs that were renamed or never committed.
+      - name: Check internal links
+        run: |
+          gem install html-proofer -v '~> 5.0'
+          # author.email is deliberately obfuscated as "d_fisch [at] mit.edu" to
+          # deter scrapers, so it is rendered as plain text and the site emits no
+          # mailto: links at all (see _includes/contact.html). The ignore stays as
+          # a guard: if a mailto: is ever added, html-proofer would rightly read
+          # the obfuscated address as invalid and fail the build.
+          htmlproofer ./_site \
+            --disable-external \
+            --allow-hash-href \
+            --ignore-empty-alt \
+            --no-enforce-https \
+            --ignore-urls "/^mailto:/"

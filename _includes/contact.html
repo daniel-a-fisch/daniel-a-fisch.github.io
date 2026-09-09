@@ -1,0 +1,23 @@
+<div class="contact">
+  <p>{{ site.author.email }}</p>
+  <div class="contact__links">
+    {%- if site.author.mit -%}
+      <a href="{{ site.author.mit }}">MIT profile</a>
+    {%- endif -%}
+    {%- if site.author.orcid -%}
+      <a href="{{ site.author.orcid }}">ORCID</a>
+    {%- endif -%}
+    {%- if site.author.github -%}
+      <a href="{{ site.author.github }}">GitHub</a>
+    {%- endif -%}
+    {%- if site.author.linkedin -%}
+      <a href="{{ site.author.linkedin }}">LinkedIn</a>
+    {%- endif -%}
+    {%- if site.author.cv -%}
+      <a href="{{ site.author.cv | relative_url }}">CV (PDF)</a>
+    {%- endif -%}
+    {%- if site.author.googlescholar -%}
+      <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+    {%- endif -%}
+  </div>
+</div>

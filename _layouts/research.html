@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<div class="post-meta">
+  <span>{{ page.label | upcase }}</span>
+  {%- if page.venue %} &middot; {{ page.venue }}{% endif -%}
+  {%- if page.date %} &middot; {{ page.date | date: '%Y' }}{% endif -%}
+  {%- if page.authors -%}
+    <br>{{ page.authors }}
+  {%- endif -%}
+</div>
+
+{%- if page.paper or page.link -%}
+<p>
+  {%- if page.paper -%}
+    <a href="{{ page.paper | relative_url }}">PDF</a>
+  {%- endif -%}
+  {%- if page.paper and page.link -%}
+    &middot;
+  {%- endif -%}
+  {%- if page.link -%}
+    <a href="{{ page.link }}">Published version</a>
+  {%- endif -%}
+</p>
+{%- endif -%}
+
+<div class="prose">
+  {{ content }}
+</div>
+
+<p><a href="{{ "/research/" | relative_url }}">← Back to Research</a></p>
