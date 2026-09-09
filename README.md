@@ -28,7 +28,7 @@ title: "Mathematical Modeling of Opinion Dynamics"
 label: "Master's thesis"
 venue: "University of Cambridge"
 date: 2023-05-01
-authors: "Jane Doe, Daniel Fisch, John Smith"  # optional; list everyone, including yourself
+authors: "Daniel Fisch, John Smith"  # optional; list everyone, including yourself
 summary: "A short description of the research"  # optional
 link: "https://example.com/paper"  # optional
 paper: "/files/paper.pdf"  # optional, relative to site root
@@ -84,11 +84,8 @@ htmlproofer ./_site --disable-external --allow-hash-href \
   --ignore-empty-alt --no-enforce-https --ignore-urls "/^mailto:/"
 ```
 
-The `mailto:` ignore is necessary because `site.author.email` is deliberately obfuscated (`d_fisch [at] mit.edu`) to defeat scrapers. html-proofer would read it as an invalid email address, so we tell it to skip `mailto:` links.
+The `mailto:` ignore is necessary because `site.author.email` is deliberately obfuscated (`d_fisch [at] mit.edu`).
 
-## Email obfuscation
-
-The email address in `_config.yml` is obfuscated on purpose and must never be turned into a `mailto:` link. It is rendered as plain text wherever it appears (contact section, reading list).
 
 ## Math rendering
 
