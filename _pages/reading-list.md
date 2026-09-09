@@ -4,7 +4,7 @@ title: "Reading List"
 permalink: /reading-list/
 ---
 
-A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list — feel free to send me your recommendations: {{ site.author.email }}.
+A small collection of links to online resources that I find exciting and insightful. I will keep adding to this list -- feel free to send me your recommendations: {{ site.author.email }}.
 
 ### Websites and Blogs
 
